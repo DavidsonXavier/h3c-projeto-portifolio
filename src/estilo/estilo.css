@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(241, 241, 203);
+    box-sizing: border-box;
+    font-family: 'Montserrat',monospace, sans-serif;
+
+    
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-image: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ; */
+    /* background-repeat: repeat-y; */
+    /* background-position: 0 0; */
+
+    /* Gradient do uiGradients */
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    /* Ocupar a altura toda da tela */
+    height: 100vh;
+
+}
+
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalho h2{
+    font-size: 35px;
+}
+
+.cabecalho nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.cabecalho nav ul li {    
+    padding: 15px;
+}
+
+.cabecalho nav ul li a i {
+    padding-right: 4px;
+    font-size: 36px;
+}
+
+.cabecalho nav ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    /* transition: 200ms; */
+}
+
+
+
+
+.cabecalho nav ul li a:hover {
+    font-weight: bold;
+    color: #F1F1F1;
+    text-decoration: underline;
+}
+
+
+.cabecalho #logo {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.container {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .name {
+    margin-bottom: 15px;
+}
+.container .name h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.container .name h2 {
+    text-align: center;
+}
+
+.container #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.container #about #arrow #arrow__clicked {
+    font-size: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    animation: blink 2s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+ 
+ }
+ 
+ .container #about #arrow #arrow__clicked{
+    transition: 300ms;
+ }
+.container #about #arrow .rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+
+#about #aboutme.mostrar {
+    display: block !important;
+}
+
+#about #aboutme p {
+    text-align: justify;
+}
+
+section #tecnologias {
+    display: none;
+}
+
+section #tecnologias.ocultar {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+
+
+section #tecnologias .skill {
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 7px;
+    width: 120px;
+    height: 120px;
+     /* padding: 10px; */
+    margin: 5px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section #tecnologias .skill p {
+    text-align: justify;
+}
+
+section #tecnologias .skill i {
+    font-size: 80px;
+    /* align-self: center; */
+    
+}
+
+#html5{
+    color: #e07116;
+}
+
+#css3{
+    color: #2918c4;
+}
+
+#js {
+    color: rgb(221, 221, 47);
+}
+
+
+#about #form {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#about #form input {
+    padding: 5px;
+    border: none;
+    width: 40%;
+
+    outline: none;
+    color: black;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    overflow: hidden;
+
+}
+
+#about #form form button{
+    width: 20%;
+
+    border: none;
+    padding: 5px 10px;
+    margin: -4px;
+    background: linear-gradient(to right, #c09717 50%, #9c551b 50% );
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: all 300ms ease-out;
+    
+}
+
+#about #form form button:hover{
+    background-position: left bottom;
+    font-weight: 400;
+}
+
+/* Responsivdade nas divs de tecnologia */
+@media (max-width: 500px){
+    section #tecnologias.ocultar{
+        flex-direction: column;
+    }
+
+}
+
+#rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000003F;
+    padding: 8px;
+}
+
+#rodape i {
+    color: red;
+    margin-left: 5px;
+}

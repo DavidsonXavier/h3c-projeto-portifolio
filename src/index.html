@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./estilo/estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
+    <title>Davidson Xavier</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div id="logo">
+            <h2>Dx</h2>
+        </div>
+        
+        <nav>
+            <ul>
+            <li>
+                <a href="https://github.com/DavidsonXavier" target="_blank"><i class="fa-brands fa-github"></i><span>Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/davidsonazevedo/" target="_blank"><i class="fa-brands fa-linkedin"></i><span>Linkedin</span></a></li>
+                <!-- <li><a href="mailto:teste@gmail.com"><i class="fa-solid fa-envelope"></i><span>Email</span></a></li>
+            </ul> -->
+        </nav>
+            
+        
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Davidson Xavier</h1>
+                <h2>Fullstack Developer</h2>
+            </div>
+            <section id="about">
+                <h2 style="display: none;">Sobre</h2>
+                <div id="arrow">
+                    <i class="fa-solid fa-circle-down" id="arrow__clicked" onclick="mostrarAbout()"></i>
+                </div>
+
+                <section id="aboutme" style="display: none;">
+                    <h3 style="display: none;">Sobre Mim</h3>
+                    <p>Olá, Bem-vindo ao meu portifólio. Me chamo Davidson sou Tecnólogo em Telemática. Atualmente estou desenvolvendo minhas skills através de cursos online e bootcamps. Abaixo algumas tecnologias que estou desenvolvendo no momento </p>
+                </section>
+
+                <section id="tecnologias" >
+                    <h3 style="display: none;">Tecnologias</h3>
+                    <div id="html" class="skill">
+                        <i class="fa-brands fa-html5"id="html5"></i></div>
+
+                    <div id="css" class="skill">
+                        <i class="fa-brands fa-css3-alt" id="css3"></i>
+                    </div>
+                    <div id="Javascript" class="skill">
+                        <i class="fa-brands fa-js" id="js"></i>
+                    </div>
+                    
+
+                </section>
+
+                <div id="form">
+                    <!-- Event preventDefault -> Cancela o evento padrao do form -->
+                    <form onsubmit="event.preventDefault();">
+                        <input type="text" placeholder="Digite seu melhor Email">
+                        <button>Enviar!</button>
+                    </form>
+                </div>
+            </section>
+
+        </section>
+    </main>
+    <footer id="rodape">
+        <span>Desenvolvido por Davidson <i class="fa fa-heart"></i> (Projeto Hiring Coders 3)</span>
+    </footer>
+    <script src="./scripts/animacao.js">        
+    </script>
+</body>
+</html>
+
